@@ -20,10 +20,10 @@ body {
 
 /* Header */
 header {
-  width: 100vw; /* <- aqui o ajuste novo */
+  width: 100vw;
   background: #000;
   color: #fff;
-  padding: 10px 20px; /* padding melhorado */
+  padding: 10px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -155,7 +155,7 @@ img {
   width: 100%;
   max-width: 400px;
   border-radius: 12px;
-  object-fit: contain; /* <- ajuste no vídeo */
+  object-fit: contain;
 }
 
 .produto-texto {
@@ -185,14 +185,20 @@ img {
 }
 
 .produto-comparativo img {
+  width: 100%;
   max-width: 450px;
+  height: auto;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
+/* Específico para gráficos */
 .grafico-preco {
-  max-width: 50px; /* ou ajuste fino tipo 320px, 340px, dependendo do teste no seu celular */
+  width: 100%;
+  max-width: 320px;
+  height: auto;
 }
-
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -224,5 +230,9 @@ img {
   nav a {
     margin: 10px 0;
     font-size: 20px;
+  }
+
+  .produto-comparativo img {
+    max-width: 100%;
   }
 }
