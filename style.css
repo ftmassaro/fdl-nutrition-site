@@ -189,6 +189,11 @@ img {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+.grafico-preco {
+  max-width: 380px; /* ou ajuste fino tipo 320px, 340px, dependendo do teste no seu celular */
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
   .logo {
