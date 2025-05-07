@@ -200,6 +200,18 @@ img {
   height: auto;
 }
 
+.tabela-comparativa {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  transform: scale(1.5); /* <- aumenta visualmente */
+  transform-origin: top center; /* <- centraliza o zoom */
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
   .logo {
@@ -235,4 +247,14 @@ img {
   .produto-comparativo img {
     max-width: 100%;
   }
+}
+
+.preco-produto {
+  font-size: 20px;
+  color: #222;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.preco-produto strong {
+  color: #0a3f1d;
 }
